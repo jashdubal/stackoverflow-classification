@@ -7,7 +7,7 @@
 
 ![PyTorch Logo](https://github.com/pytorch/pytorch/blob/master/docs/source/_static/img/pytorch-logo-dark.png)
 
-A PyTorch-based RNN model for classifying Stack Overflow questions into Spark, Machine Learning, or Security categories.
+PyTorch-based RNN model for classifying Stack Overflow questions into Spark, Machine Learning, or Security categories.
 
 ## Table of Contents
 - [Introduction](#introduction)
