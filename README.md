@@ -30,6 +30,17 @@ The goal of this project is to develop an understanding of natural language proc
 
 ## Installation
 
-1. Clone the repository
-```bash
-git clone https://github.com/your_username/stackoverflow-topic-classifier.git
+_Coming soon._
+
+## Usage
+
+_Coming soon._
+
+## Contribution
+
+Contributions are welcome! Please feel free to submit a Pull Request or create an Issue to discuss new features or improvements.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
