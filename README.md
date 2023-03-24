@@ -3,6 +3,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/your_username/stackoverflow-topic-classifier/issues)
 
+
+![PyTorch Logo](https://github.com/pytorch/pytorch/blob/master/docs/source/_static/img/pytorch-logo-dark.png)
+
 A PyTorch-based RNN model for classifying Stack Overflow questions into Spark, Machine Learning, or Security categories.
 
 ## Table of Contents
