@@ -26,8 +26,8 @@ The goal of this project is to develop an understanding of natural language proc
 
 ### Dataset and Models
 
-- Dataset: Stack Overflow data containing questions and their associated categories (Spark, Machine Learning, or Security)
-- Models: RNN-based model (LSTM and GRU) as the primary approach
+- Dataset: Dataset: Stack Overflow data containing questions and their associated categories (Spark, Machine Learning, or Security). The dataset can be found on Kaggle at https://www.kaggle.com/datasets/jashdubal/stack-overflow-classification.
+- Models: RNN-based model (LSTM and GRU) as the primary approach.
 
 ## Installation
 
