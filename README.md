@@ -3,6 +3,7 @@
 ![Python](https://img.shields.io/pypi/pyversions/tensorflow.svg?style=plastic)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/your_username/stackoverflow-topic-classifier/issues)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/stackoverflow-topic-classifier/blob/main/notebook.ipynb)
 
 
 ![PyTorch Logo](https://github.com/pytorch/pytorch/blob/master/docs/source/_static/img/pytorch-logo-dark.png)
