@@ -5,9 +5,6 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18ghs9h4NegJUocBamwlfdj8OibSsW8S7)
 [![Kaggle](https://img.shields.io/badge/dataset-Kaggle-blue.svg)](https://www.kaggle.com/datasets/jashdubal/stack-overflow-classification)
 
-
-![PyTorch Logo](https://github.com/pytorch/pytorch/blob/master/docs/source/_static/img/pytorch-logo-dark.png)
-
 PyTorch-based RNN model for classifying Stack Overflow questions into Spark, Machine Learning, or Security categories.
 
 ## Table of Contents
