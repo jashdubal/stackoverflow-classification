@@ -1,7 +1,8 @@
 # Stack Overflow Topic Classifier
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Open in GitHub Notebook](https://img.shields.io/badge/Open%20in-GitHub%20Notebook-brightgreen)](https://github.com/jashdubal/stackoverflow-classification/blob/main/SO-classify-notebook.ipynb)
+[![Open in Jupyter Notebook](https://img.shields.io/badge/Open%20in-Jupyter%20Notebook-orange)](https://github.com/jashdubal/stackoverflow-classification/blob/main/SO-classify-notebook.ipynb)
+
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18ghs9h4NegJUocBamwlfdj8OibSsW8S7)
 
 This project demonstrates the classification of Stack Overflow posts into three categories: "spark", "ml", and "security". The performance of two different recurrent neural network (RNN) architectures, Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU), is compared.
