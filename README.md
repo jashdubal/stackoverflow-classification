@@ -23,7 +23,7 @@ This project demonstrates the classification of Stack Overflow posts into three 
 ## Background
 
 This repository contains the following code files:
-- [`SO-notebook.ipynb`](SO-notebook.ipynb): Jupyter Notebook that contains the code for training and evaluating a machine learning model on the Stack Overflow dataset.
+- [`SO_notebook.ipynb`](SO-notebook.ipynb): Jupyter Notebook that contains the code for training and evaluating a machine learning model on the Stack Overflow dataset.
 - [`dataset/SO.csv`](dataset/SO.csv): Stack Overflow dataset used to train and evaluate the machine learning model in SO-notebook.ipynb.
 
 ## Dataset
