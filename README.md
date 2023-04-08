@@ -56,6 +56,8 @@ Ensure the required dependencies are installed:
 - Matplotlib
 - NLTK
 
+Note: Running the entire notebook may take up to 3 hours, depending on your machine's hardware specifications.
+
 ### Installing dependencies using `pip`
 
 ```shell
