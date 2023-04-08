@@ -5,7 +5,7 @@
 
 This project demonstrates the classification of Stack Overflow posts into three categories: "spark", "ml", and "security". The performance of two different recurrent neural network (RNN) architectures, Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU), is compared.
 
-<img src=rnn-pipeline.drawio.png/>
+<img src=assets/rnn-pipeline.drawio.png/>
 
 ## Table of Contents
 
