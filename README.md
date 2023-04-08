@@ -18,27 +18,19 @@ The goal of this project is to develop an understanding of natural language proc
 
 ### Pipeline
 ```mermaid
-    gantt
-    title Machine Learning Timeline
+sequenceDiagram
+    participant User
+    participant Preprocessing
+    participant ModelDesign
+    participant Training
+    participant HyperparameterTuning
+    participant Evaluation
+    User->>Preprocessing: Preprocessing
+    Preprocessing->>ModelDesign: Model Design
+    ModelDesign->>Training: Training
+    Training->>HyperparameterTuning: Hyperparameter Tuning
+    HyperparameterTuning->>Evaluation: Evaluation
 
-    section Preprocessing
-    Data Cleaning         :done,    des1, 2023-04-01, 2023-04-02
-    Feature Engineering   :done,    des2, 2023-04-02, 2023-04-03
-    Data Splitting        :done,    des3, 2023-04-03, 2023-04-04
-
-    section Model Design
-    Model Selection       :done,    des4, 2023-04-04, 2023-04-05
-    Architecture Design   :done,    des5, 2023-04-05, 2023-04-06
-
-    section Training
-    Model Training        :done,    des6, 2023-04-06, 2023-04-07
-
-    section Hyperparameter Tuning
-    Hyperparameter Search :done,    des7, 2023-04-07, 2023-04-08
-
-    section Evaluation
-    Model Testing         :done,    des8, 2023-04-08, 2023-04-09
-    Model Deployment      :         des9, 2023-04-09, 2023-04-10
 ```
 
 ### Dataset and Models
