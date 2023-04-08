@@ -21,6 +21,13 @@ This project demonstrates the classification of Stack Overflow posts into three 
 
 The dataset used in this project is located in the `datasets/SO.csv` file. It contains Stack Overflow post titles and their corresponding labels ("spark", "ml", or "security").
 
+The dataset consists of 150,000 entries with no missing values, and includes two columns: 'Title' and 'Label'. The data types for both columns are objects (strings).
+
+The target distribution of the dataset is balanced, with each label having 50,000 samples:
+- spark: 50,000
+- ml: 50,000
+- security: 50,000
+
 ## Model Design
 
 Two RNN architectures are implemented and compared:
@@ -47,11 +54,49 @@ The hyperparameters of interest in this project are the hidden dimension and dro
 
 ## Evaluation
 
-The performance of the two RNN models are compared using the following metrics:
+The performance of the two RNN models (LSTM and GRU) and the tuned LSTM model are compared using the following metrics:
 
 ### Receiver Operating Characteristic (ROC) curves
+
+| LSTM Model | GRU Model | Tuned LSTM Model (ndim=best_ndim, dr=best_dr) |
+|------------|-----------|-----------------------------------------------|
+| ![LSTM ROC](assets/lstm_roc.png) | ![GRU ROC](assets/gru_roc.png) | ![Tuned LSTM ROC](assets/tuned_lstm_roc.png) |
+
 ### Confusion matrices
+
+| LSTM Model | GRU Model | Tuned LSTM Model (ndim=best_ndim, dr=best_dr) |
+|------------|-----------|-----------------------------------------------|
+| ![LSTM CM](assets/lstm_cm.png) | ![GRU CM](assets/gru_cm.png) | ![Tuned LSTM CM](assets/tuned_lstm_cm.png) |
+
 ### Classification reports
+
+#### LSTM Model Performance:
+
+| Metric     | Spark    | ML       | Security | Avg/Total |
+|------------|----------|----------|----------|-----------|
+| Precision  | 0.9111   | 0.9085   | 0.9239   | 0.9145    |
+| Recall     | 0.8986   | 0.9051   | 0.9400   | 0.9146    |
+| F1-score   | 0.9048   | 0.9068   | 0.9319   | 0.9145    |
+| Support    | 10000    | 10000    | 10000    | 30000     |
+
+#### GRU Model Performance:
+
+| Metric     | Spark    | ML       | Security | Avg/Total |
+|------------|----------|----------|----------|-----------|
+| Precision  | 0.8998   | 0.9018   | 0.9392   | 0.9136    |
+| Recall     | 0.9075   | 0.9014   | 0.9315   | 0.9135    |
+| F1-score   | 0.9036   | 0.9016   | 0.9353   | 0.9135    |
+| Support    | 10000    | 10000    | 10000    | 30000     |
+
+#### Tuned LSTM Model Performance (ndim=best_ndim, dr=best_dr):
+
+| Metric     | Spark    | ML       | Security | Avg/Total |
+|------------|----------|----------|----------|-----------|
+| Precision  | ...      | ...      | ...      | ...       |
+| Recall     | ...      | ...      | ...      | ...       |
+| F1-score   | ...      | ...      | ...      | ...       |
+| Support    | 10000    | 10000    | 10000    | 30000     |
+
 
 These visualizations help in understanding and comparing the performance of the LSTM and GRU models, which aids in selecting the best model for the task.
 
