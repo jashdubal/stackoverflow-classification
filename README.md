@@ -18,11 +18,26 @@ The goal of this project is to develop an understanding of natural language proc
 
 ### Pipeline
 ```mermaid
-graph TD
-    A[Data] -->|Preprocessing| B[Preprocessing]
-    B -->|Model Design| C[Model Design]
-    C -->|Hyperparameter Tuning| D[Hyperparameter Tuning]
-    D -->|Evaluation| E[Evaluation]
+journey
+    title Machine Learning Pipeline
+    section Data Collection
+        User navigates to data source: 5: User
+        User downloads data: 2: User
+        Data is saved to local directory: 1: System
+    section Data Preprocessing
+        Data is cleaned and filtered: 3: System
+        Text is tokenized: 2: System
+        Text is vectorized: 4: System
+    section Model Training
+        Model is designed and compiled: 3: System
+        Hyperparameters are tuned: 5: System
+        Model is trained on data: 4: System
+    section Model Evaluation
+        Model is evaluated on test data: 4: System
+        Results are analyzed: 2: User
+    section Model Deployment
+        Model is deployed to production: 5: System
+        Users can access model predictions: 3: User
 ```
 
 ### Dataset and Models
