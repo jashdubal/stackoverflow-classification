@@ -58,13 +58,13 @@ The performance of the two RNN models (LSTM and GRU) and the tuned LSTM model ar
 
 ### Receiver Operating Characteristic (ROC) curves
 
-| LSTM Model | GRU Model | Tuned LSTM Model (ndim=best_ndim, dr=best_dr) |
+| LSTM Model | GRU Model | Tuned LSTM Model (ndim=128, dr=0.7) |
 |------------|-----------|-----------------------------------------------|
 | ![LSTM ROC](assets/lstm_roc.png) | ![GRU ROC](assets/gru_roc.png) | ![Tuned LSTM ROC](assets/tuned_lstm_roc.png) |
 
 ### Confusion matrices
 
-| LSTM Model | GRU Model | Tuned LSTM Model (ndim=best_ndim, dr=best_dr) |
+| LSTM Model | GRU Model | Tuned LSTM Model (ndim=128, dr=0.7) |
 |------------|-----------|-----------------------------------------------|
 | ![LSTM CM](assets/lstm_cm.png) | ![GRU CM](assets/gru_cm.png) | ![Tuned LSTM CM](assets/tuned_lstm_cm.png) |
 
@@ -88,13 +88,13 @@ The performance of the two RNN models (LSTM and GRU) and the tuned LSTM model ar
 | F1-score   | 0.9036   | 0.9016   | 0.9353   | 0.9135    |
 | Support    | 10000    | 10000    | 10000    | 30000     |
 
-#### Tuned LSTM Model Performance (ndim=best_ndim, dr=best_dr):
+#### Tuned LSTM Model Performance (ndim=128, dr=0.7):
 
 | Metric     | Spark    | ML       | Security | Avg/Total |
 |------------|----------|----------|----------|-----------|
-| Precision  | ...      | ...      | ...      | ...       |
-| Recall     | ...      | ...      | ...      | ...       |
-| F1-score   | ...      | ...      | ...      | ...       |
+| Precision  | 0.8868   | 0.9127   | 0.9530   | 0.9175    |
+| Recall     | 0.9228   | 0.9021   | 0.9254   | 0.9168    |
+| F1-score   | 0.9044   | 0.9074   | 0.9390   | 0.9169    |
 | Support    | 10000    | 10000    | 10000    | 30000     |
 
 
