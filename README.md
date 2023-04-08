@@ -18,11 +18,15 @@ The goal of this project is to develop an understanding of natural language proc
 
 ### Pipeline
 ```mermaid
-graph LR
-A[Data] --> B[Preprocessing]
-B --> C[Model Design]
-C --> D[Hyperparameter Tuning]
-D --> E[Evaluation]
+graph TD
+    A[Data] -->|Preprocessing| B[Preprocessing]
+    B -->|Model Design| C[Model Design]
+    C -->|Hyperparameter Tuning| D[Hyperparameter Tuning]
+    D -->|Evaluation| E[Evaluation]
+
+    style A,B,C,D,E fill:#FFF,stroke-width:2px,stroke:#333,opacity:0.8
+    style A,B,C,D,E,div stroke:none,fill:#FFF
+    style A,B,C,D,E,div.label,div::before,div::after font-size: 14px; font-family: Arial, sans-serif;
 ```
 
 ### Dataset and Models
