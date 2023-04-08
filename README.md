@@ -3,37 +3,54 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18ghs9h4NegJUocBamwlfdj8OibSsW8S7)
 
-PyTorch-based RNN model for classifying Stack Overflow questions into Spark, Machine Learning, or Security categories.
+This project demonstrates the classification of Stack Overflow posts into three categories: "spark", "ml", and "security". The performance of two different recurrent neural network (RNN) architectures, Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU), is compared.
+
+<img src=rnn-pipeline.drawio.png/>
 
 ## Table of Contents
-- [Introduction](#introduction)
-- [Installation](#installation)
+
+- [Dataset](#dataset)
+- [Model Architectures](#model-architectures)
+- [Results](#results)
+- [Diagrams](#diagrams)
 - [Usage](#usage)
-- [Contribution](#contribution)
-- [License](#license)
 
-## Introduction
+## Dataset
 
-The goal of this project is to develop an understanding of natural language processing and recurrent neural networks (RNNs) by implementing a topic classification model to categorize Stack Overflow questions into three categories: Spark, Machine Learning, or Security using PyTorch.
+The dataset used in this project is located in the `datasets/SO.csv` file. It contains Stack Overflow post titles and their corresponding labels ("spark", "ml", or "security").
 
-### Dataset and Models
+## Model Design
 
-- Dataset: Dataset: Stack Overflow data containing questions and their associated categories (Spark, Machine Learning, or Security). The dataset can be found on Kaggle at https://www.kaggle.com/datasets/jashdubal/stack-overflow-classification.
-- Models: RNN-based model (LSTM and GRU) as the primary approach.
+The following RNN architectures are implemented and compared:
+1. **LSTM Classifier**
+2. **GRU Classifier**
 
-## Installation
+## Results
 
-_Coming soon._
+After training and evaluating both models, a comprehensive comparison of their performance is provided using the following metrics:
+
+- Receiver Operating Characteristic (ROC) curves
+- Area Under the Curve (AUC) values
+- Confusion matrices
+- Classification reports
+
+Hyperparameter tuning is performed to improve the performance of the selected model, and the updated model is re-evaluated using the same metrics.
 
 ## Usage
 
-_Coming soon._
+The entire project is implemented in a Jupyter Notebook. To run the project, follow these steps:
 
-## Contribution
+1. Clone the repository.
+2. Open the Jupyter Notebook.
+3. Run the notebook cells in order, starting from the top.
 
-Contributions are welcome! Please feel free to submit a Pull Request or create an Issue to discuss new features or improvements.
+Ensure the required dependencies are installed.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
+---
+
 
