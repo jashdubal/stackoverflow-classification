@@ -23,10 +23,6 @@ graph TD
     B -->|Model Design| C[Model Design]
     C -->|Hyperparameter Tuning| D[Hyperparameter Tuning]
     D -->|Evaluation| E[Evaluation]
-
-    style A,B,C,D,E fill:#FFF,stroke-width:2px,stroke:#333,opacity:0.8
-    style A,B,C,D,E,div stroke:none,fill:#FFF
-    style A,B,C,D,E,div.label,div::before,div::after font-size: 14px; font-family: Arial, sans-serif;
 ```
 
 ### Dataset and Models
