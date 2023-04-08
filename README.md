@@ -43,7 +43,7 @@ The training process is implemented using a custom `train_and_evaluate()` functi
 
 ## Hyperparameter Tuning
 
-Hyperparameter tuning can be performed using grid search or random search techniques. In this project, the hyperparameters of interest are the hidden dimension and dropout rate. By experimenting with different values for these hyperparameters, an optimal combination can be found that yields the best validation performance.
+The hyperparameters of interest in this project are the hidden dimension and dropout rate. By experimenting with different values for these hyperparameters, we can improve model performance.
 
 ## Evaluation
 
@@ -63,7 +63,7 @@ The entire project is implemented in a Jupyter Notebook. To run the project, fol
 2. Open the Jupyter Notebook.
 3. Run the notebook cells in order, starting from the top.
 
-Ensure the required dependencies are installed, including PyTorch, scikit-learn, pandas, and seaborn.
+Ensure the required dependencies are installed.
 
 ## License
 
