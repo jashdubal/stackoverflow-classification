@@ -46,7 +46,22 @@ The entire project is implemented in a Jupyter Notebook. To run the project, fol
 2. Open the Jupyter Notebook.
 3. Run the notebook cells in order, starting from the top.
 
-Ensure the required dependencies are installed.
+Ensure the required dependencies are installed:
+- Python 3.7 or later
+- PyTorch
+- NumPy
+- Pandas
+- Scikit-learn
+- Seaborn
+- Matplotlib
+
+### Installing dependencies using `pip`
+
+```shell
+
+pip install torch numpy pandas scikit-learn seaborn matplotlib
+```
+
 
 ## Model Design
 
