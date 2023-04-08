@@ -10,10 +10,12 @@ This project demonstrates the classification of Stack Overflow posts into three 
 ## Table of Contents
 
 - [Dataset](#dataset)
-- [Model Architectures](#model-architectures)
-- [Results](#results)
-- [Diagrams](#diagrams)
+- [Model Design](#model-design)
+- [Training](#training)
+- [Hyperparameter Tuning](#hyperparameter-tuning)
+- [Evaluation](#evaluation)
 - [Usage](#usage)
+- [License](#license)
 
 ## Dataset
 
@@ -21,20 +23,37 @@ The dataset used in this project is located in the `datasets/SO.csv` file. It co
 
 ## Model Design
 
-The following RNN architectures are implemented and compared:
-1. **LSTM Classifier**
-2. **GRU Classifier**
+Two RNN architectures are implemented and compared:
 
-## Results
+1. **LSTM Classifier**: An LSTM-based RNN model to classify Stack Overflow post titles.
+2. **GRU Classifier**: A GRU-based RNN model to classify Stack Overflow post titles.
 
-After training and evaluating both models, a comprehensive comparison of their performance is provided using the following metrics:
+Both models are defined using the PyTorch framework, with custom classes `LSTMClassifier` and `GRUClassifier`.
 
-- Receiver Operating Characteristic (ROC) curves
-- Area Under the Curve (AUC) values
-- Confusion matrices
-- Classification reports
+## Training
 
-Hyperparameter tuning is performed to improve the performance of the selected model, and the updated model is re-evaluated using the same metrics.
+The training process is implemented using a custom `train_and_evaluate()` function. The training loop consists of the following steps:
+
+1. Set the model to training mode.
+2. Iterate over the training data in mini-batches.
+3. Perform forward pass.
+4. Calculate the loss using CrossEntropyLoss.
+5. Perform backpropagation to compute gradients.
+6. Update model parameters using Adam optimizer.
+
+## Hyperparameter Tuning
+
+Hyperparameter tuning can be performed using grid search or random search techniques. In this project, the hyperparameters of interest are the hidden dimension and dropout rate. By experimenting with different values for these hyperparameters, an optimal combination can be found that yields the best validation performance.
+
+## Evaluation
+
+The performance of the two RNN models are compared using the following metrics:
+
+### Receiver Operating Characteristic (ROC) curves
+### Confusion matrices
+### Classification reports
+
+These visualizations help in understanding and comparing the performance of the LSTM and GRU models, which aids in selecting the best model for the task.
 
 ## Usage
 
@@ -44,13 +63,11 @@ The entire project is implemented in a Jupyter Notebook. To run the project, fol
 2. Open the Jupyter Notebook.
 3. Run the notebook cells in order, starting from the top.
 
-Ensure the required dependencies are installed.
+Ensure the required dependencies are installed, including PyTorch, scikit-learn, pandas, and seaborn.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
+This project is licensed under the [MIT License](LICENSE).
 
 ---
-
 
