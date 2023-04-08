@@ -19,7 +19,7 @@ The goal of this project is to develop an understanding of natural language proc
 ### Pipeline
 ```mermaid
 journey
-    title ML Pipeline
+    title Machine Learning Pipeline
     section DS
         RD: Data Read
         PP: Preprocessing
@@ -31,12 +31,6 @@ journey
         CV: Cross-Validation
     section EV
         E: Evaluation
-    DS --- PP
-    PP --- MDS
-    MDS --- HT
-    HT --- T
-    T --- CV
-    CV --- E
 ```
 
 ### Dataset and Models
