@@ -89,13 +89,13 @@ Confusion matrices and classification report also slightly favour LSTM over GRU.
 
 ### Receiver Operating Characteristic (ROC) curves
 
-| LSTM Model | GRU Model | Tuned LSTM Model (ndim=128, dr=0.7) |
+| LSTM Model | GRU Model | Tuned LSTM Model (ndim=256, dr=0.3) |
 |------------|-----------|-----------------------------------------------|
 | ![LSTM ROC](assets/lstm_roc.png) | ![GRU ROC](assets/gru_roc.png) | ![Tuned LSTM ROC](assets/tuned_lstm_roc.png) |
 
 ### Confusion matrices
 
-| LSTM Model | GRU Model | Tuned LSTM Model (ndim=128, dr=0.7) |
+| LSTM Model | GRU Model | Tuned LSTM Model (ndim=256, dr=0.3) |
 |------------|-----------|-----------------------------------------------|
 | ![LSTM CM](assets/lstm_cm.png) | ![GRU CM](assets/gru_cm.png) | ![Tuned LSTM CM](assets/tuned_lstm_cm.png) |
 
