@@ -43,27 +43,20 @@ The target distribution of the dataset is balanced, with each label having 50,00
 The entire project is implemented in a Jupyter Notebook. To run the project, follow these steps:
 
 1. Clone the repository.
-2. Open the Jupyter Notebook.
-3. Run the notebook cells in order, starting from the top.
-
-Ensure the required dependencies are installed:
-- Python 3.7 or later
-- PyTorch
-- NumPy
-- Pandas
-- Scikit-learn
-- Seaborn
-- Matplotlib
-- NLTK
-
-Note: Running the entire notebook may take up to 3 hours, depending on your machine's hardware specifications.
-
-### Installing dependencies using `pip`
+2. Install the required dependencies using pip. You can do this by running the following command:
 
 ```shell
 
 pip install torch numpy pandas scikit-learn seaborn matplotlib nltk
 ```
+
+3. Open the Jupyter Notebook `SO-notebook.ipynb` in Jupyter Notebook or JupyterLab.
+4. Follow the instructions provided in the notebook to train and evaluate the LSTM and GRU models on the Stack Overflow dataset.
+
+Note: Running the entire notebook may take up to 3 hours, depending on your machine's hardware specifications.
+
+### Installing dependencies using `pip`
+
 
 
 ## Model Design
