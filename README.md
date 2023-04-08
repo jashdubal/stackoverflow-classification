@@ -129,14 +129,17 @@ A practical application of this model is to assist users in determining the appr
 
 ## Reflection
 *i. Why did you select this problem to solve?*
+
 I selected this problem to solve as it allowed me to learn and reinforce my understanding of NLP, and to apply it in different domains. I had previously used NLP in the context of Spark, but never with PyTorch. Additionally, I was interested in learning more about neural networks and the PyTorch framework, so this project provided a perfect opportunity for me to delve into these topics.
 
 
 
 *ii. Were there any deviations from your proposal? Explain why (or why not).*
+
 There were no significant deviations from the original project proposal. I followed a project guide based on Amazon reviews, which provided a solid foundation for building my project. This allowed me to focus on understanding and applying NLP and PyTorch concepts effectively throughout the project.
 
 *iii. What did you find difficult about this project? What did you find easy? What did you learn?*
+
 The most challenging aspect of this project was preprocessing the data, as it contained a lot of noise and required careful NLP text preprocessing. Converting between different data types such as strings, vectors, and tensors while ensuring the types are valid was particularly tricky.
 
 On the other hand, I found designing the model and building the training loop relatively easy, since I could consult various sources for guidance, and the process of using PyTorch for machine learning appeared to be consistent across different cases. This allowed me to focus on the specific aspects of NLP and RNN-based models without getting bogged down in the details of the machine learning process itself.
