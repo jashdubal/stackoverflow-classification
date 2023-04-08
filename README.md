@@ -12,7 +12,7 @@ This project demonstrates the classification of Stack Overflow posts into three 
 
 - [Background](#background) 
 - [Dataset](#dataset)
-- [Getting Started](#usage)
+- [Getting Started](#getting-started)
 - [Model Design](#model-design)
 - [Training](#training)
 - [Hyperparameter Tuning](#hyperparameter-tuning)
