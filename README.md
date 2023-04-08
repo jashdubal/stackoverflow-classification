@@ -18,19 +18,27 @@ The goal of this project is to develop an understanding of natural language proc
 
 ### Pipeline
 ```mermaid
-journey
-    title Machine Learning Pipeline
-    section DS
-        RD: Data Read
-        PP: Preprocessing
-    section MD
-        MDS: Model Design
-        HT: Hyperparameter Tuning
-    section TR
-        T: Training
-        CV: Cross-Validation
-    section EV
-        E: Evaluation
+    gantt
+    title Machine Learning Timeline
+
+    section Preprocessing
+    Data Cleaning         :done,    des1, 2023-04-01, 2023-04-02
+    Feature Engineering   :done,    des2, 2023-04-02, 2023-04-03
+    Data Splitting        :done,    des3, 2023-04-03, 2023-04-04
+
+    section Model Design
+    Model Selection       :done,    des4, 2023-04-04, 2023-04-05
+    Architecture Design   :done,    des5, 2023-04-05, 2023-04-06
+
+    section Training
+    Model Training        :done,    des6, 2023-04-06, 2023-04-07
+
+    section Hyperparameter Tuning
+    Hyperparameter Search :done,    des7, 2023-04-07, 2023-04-08
+
+    section Evaluation
+    Model Testing         :done,    des8, 2023-04-08, 2023-04-09
+    Model Deployment      :         des9, 2023-04-09, 2023-04-10
 ```
 
 ### Dataset and Models
