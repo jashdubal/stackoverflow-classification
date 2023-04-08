@@ -54,12 +54,13 @@ Ensure the required dependencies are installed:
 - Scikit-learn
 - Seaborn
 - Matplotlib
+- NLTK
 
 ### Installing dependencies using `pip`
 
 ```shell
 
-pip install torch numpy pandas scikit-learn seaborn matplotlib
+pip install torch numpy pandas scikit-learn seaborn matplotlib nltk
 ```
 
 
