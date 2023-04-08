@@ -19,9 +19,9 @@ The goal of this project is to develop an understanding of natural language proc
 ### Pipeline
 ```mermaid
 graph TD
-  A[Data Preprocessing] --> B[Model Design]
-  B --> C[Hyperparameter Tuning]
-  C --> D[Evaluation]
+A[Data Preprocessing] --> B[Model Design]
+B --> C[Hyperparameter Tuning]
+C --> D[Evaluation]
 
 
 ### Dataset and Models
