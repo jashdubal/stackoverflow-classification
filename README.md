@@ -81,7 +81,11 @@ The hyperparameters of interest in this project are the hidden dimension and dro
 
 ## Results
 
-The performance of the two RNN models (LSTM and GRU) and the tuned LSTM model are compared using the following metrics:
+In selecting RNN models, LSTM and GRU were considered beacuse they are both popular types of RNNs that excel at text classification tasks. I decided to compare the performance between the two models through a series comparison of ROC curves, confusion matrices, and classification reports.
+
+The slightly higher average AUC of **0.9359** in the LSTM ROC curve tells us that this model slightly outperforms GRU model when it comes to comparison between all three classes.
+
+Confusion matrices and classification report also slightly favour LSTM over GRU.
 
 ### Receiver Operating Characteristic (ROC) curves
 
@@ -95,37 +99,48 @@ The performance of the two RNN models (LSTM and GRU) and the tuned LSTM model ar
 |------------|-----------|-----------------------------------------------|
 | ![LSTM CM](assets/lstm_cm.png) | ![GRU CM](assets/gru_cm.png) | ![Tuned LSTM CM](assets/tuned_lstm_cm.png) |
 
-### Classification reports
 
-#### LSTM Model Performance:
+### Classification report
 
-| Metric     | Spark    | ML       | Security | Avg/Total |
-|------------|----------|----------|----------|-----------|
-| Precision  | 0.9111   | 0.9085   | 0.9239   | 0.9145    |
-| Recall     | 0.8986   | 0.9051   | 0.9400   | 0.9146    |
-| F1-score   | 0.9048   | 0.9068   | 0.9319   | 0.9145    |
-| Support    | 10000    | 10000    | 10000    | 30000     |
+```
+LSTM Model Performance:
+              precision    recall  f1-score   support
 
-#### GRU Model Performance:
+       spark     0.9111    0.8986    0.9048     10000
+          ml     0.9085    0.9051    0.9068     10000
+    security     0.9239    0.9400    0.9319     10000
 
-| Metric     | Spark    | ML       | Security | Avg/Total |
-|------------|----------|----------|----------|-----------|
-| Precision  | 0.8998   | 0.9018   | 0.9392   | 0.9136    |
-| Recall     | 0.9075   | 0.9014   | 0.9315   | 0.9135    |
-| F1-score   | 0.9036   | 0.9016   | 0.9353   | 0.9135    |
-| Support    | 10000    | 10000    | 10000    | 30000     |
+    accuracy                         0.9146     30000
+   macro avg     0.9145    0.9146    0.9145     30000
+weighted avg     0.9145    0.9146    0.9145     30000
+```
 
-#### Tuned LSTM Model Performance (ndim=128, dr=0.7):
+```
+GRU Model Performance:
+              precision    recall  f1-score   support
 
-| Metric     | Spark    | ML       | Security | Avg/Total |
-|------------|----------|----------|----------|-----------|
-| Precision  | 0.8868   | 0.9127   | 0.9530   | 0.9175    |
-| Recall     | 0.9228   | 0.9021   | 0.9254   | 0.9168    |
-| F1-score   | 0.9044   | 0.9074   | 0.9390   | 0.9169    |
-| Support    | 10000    | 10000    | 10000    | 30000     |
+       spark     0.8998    0.9075    0.9036     10000
+          ml     0.9018    0.9014    0.9016     10000
+    security     0.9392    0.9315    0.9353     10000
 
+    accuracy                         0.9135     30000
+   macro avg     0.9136    0.9135    0.9135     30000
+weighted avg     0.9136    0.9135    0.9135     30000
 
-These visualizations help in understanding and comparing the performance of the LSTM and GRU models, which aids in selecting the best model for the task.
+```
+
+```
+LSTM Tuned Model Performance:
+ precision    recall  f1-score   support
+
+       spark     0.8868    0.9228    0.9044     10000
+          ml     0.9127    0.9021    0.9074     10000
+    security     0.9530    0.9254    0.9390     10000
+
+    accuracy                         0.9168     30000
+   macro avg     0.9175    0.9168    0.9169     30000
+weighted avg     0.9175    0.9168    0.9169     30000
+```
 
 ## Interpretation
 *i. As described in the proposal, was the question answered/topic investigated and how?*
