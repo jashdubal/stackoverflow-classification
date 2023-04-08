@@ -55,10 +55,6 @@ pip install torch numpy pandas scikit-learn seaborn matplotlib nltk
 
 Note: Running the entire notebook may take up to 3 hours, depending on your machine's hardware specifications.
 
-### Installing dependencies using `pip`
-
-
-
 ## Model Design
 
 Two RNN architectures are implemented and compared:
