@@ -13,7 +13,7 @@ This project demonstrates the classification of Stack Overflow posts into three 
 - [Model Design](#model-design)
 - [Training](#training)
 - [Hyperparameter Tuning](#hyperparameter-tuning)
-- [Evaluation](#evaluation)
+- [Results](#results)
 - [Usage](#usage)
 - [License](#license)
 
@@ -52,7 +52,7 @@ The training process is implemented using a custom `train_and_evaluate()` functi
 
 The hyperparameters of interest in this project are the hidden dimension and dropout rate. By experimenting with different values for these hyperparameters, we can improve model performance.
 
-## Evaluation
+## Results
 
 The performance of the two RNN models (LSTM and GRU) and the tuned LSTM model are compared using the following metrics:
 
