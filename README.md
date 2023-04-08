@@ -17,7 +17,12 @@ PyTorch-based RNN model for classifying Stack Overflow questions into Spark, Mac
 The goal of this project is to develop an understanding of natural language processing and recurrent neural networks (RNNs) by implementing a topic classification model to categorize Stack Overflow questions into three categories: Spark, Machine Learning, or Security using PyTorch.
 
 ### Pipeline
-<img src="assets/Rnn-pipeline.png"/>
+```mermaid
+graph TD
+  A[Data Preprocessing] --> B[Model Design]
+  B --> C[Hyperparameter Tuning]
+  C --> D[Evaluation]
+
 
 ### Dataset and Models
 
