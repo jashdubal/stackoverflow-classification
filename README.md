@@ -20,7 +20,7 @@ This project demonstrates the classification of Stack Overflow posts into three 
 
 ## Dataset
 
-The dataset used in this project is located in the `datasets/SO.csv` file. It contains Stack Overflow post titles and their corresponding labels ("spark", "ml", or "security").
+The dataset used in this project is located in the `dataset/SO.csv` file. It contains Stack Overflow post titles and their corresponding labels ("spark", "ml", or "security").
 
 The dataset consists of 150,000 entries with no missing values, and includes two columns: 'Title' and 'Label'. The data types for both columns are objects (strings).
 
