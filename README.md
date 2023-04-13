@@ -11,7 +11,7 @@ This project demonstrates the classification of Stack Overflow posts into three 
 
 - [Background](#background) 
 - [Dataset](#dataset)
-- [Getting Started](#getting-started)
+- [How to Run](#how-to-run)
 - [Model Design](#model-design)
 - [Training](#training)
 - [Hyperparameter Tuning](#hyperparameter-tuning)
@@ -37,7 +37,7 @@ The target distribution of the dataset is balanced, with each label having 50,00
 - ml: 50,000
 - security: 50,000
 
-## Getting Started
+## How to Run
 
 The entire project is implemented in a Jupyter Notebook. To run the project, follow these steps:
 
