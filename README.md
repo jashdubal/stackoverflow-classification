@@ -16,8 +16,6 @@ This project demonstrates the classification of Stack Overflow posts into three 
 - [Training](#training)
 - [Hyperparameter Tuning](#hyperparameter-tuning)
 - [Results](#results)
-- [Interpretation](#interpretation)
-- [Reflection](#reflection)
 - [License](#license)
 
 ## Background
@@ -140,34 +138,6 @@ LSTM Tuned Model Performance:
    macro avg     0.9175    0.9168    0.9169     30000
 weighted avg     0.9175    0.9168    0.9169     30000
 ```
-
-## Interpretation
-*i. As described in the proposal, was the question answered/topic investigated and how?*
-
-The project aimed to deepen the understanding of natural language processing and recurrent neural networks by implementing a topic classification model for categorizing Stack Overflow questions into Spark, ML, or Security. This goal was successfully achieved through a systematic approach that involved the use of the PyTorch framework and RNN-based models, specifically LSTMs or GRUs, for handling sequential text data. High levels of accuracy, precision, recall, and F1-score across all categories demonstrated the effectiveness of the developed model. The positive outcomes highlight the proficiency of RNN-based models in processing sequential text data and capturing the inherent structure and dependencies in natural language.
-
-A practical application of this model is to assist users in determining the appropriate category for posting their questions on Stack Overflow. By effectively categorizing questions, the model can enhance the user experience, guiding users to the correct category and facilitating quicker, more accurate responses from the community.
-
-## Reflection
-*i. Why did you select this problem to solve?*
-
-I selected this problem to solve as it allowed me to learn and reinforce my understanding of NLP, and to apply it in different domains. I had previously used NLP in the context of Spark, but never with PyTorch. Additionally, I was interested in learning more about neural networks and the PyTorch framework, so this project provided a perfect opportunity for me to delve into these topics.
-
-
-
-*ii. Were there any deviations from your proposal? Explain why (or why not).*
-
-There were no significant deviations from the original project proposal. I followed a project guide based on Amazon reviews, which provided a solid foundation for building my project. This allowed me to focus on understanding and applying NLP and PyTorch concepts effectively throughout the project.
-
-*iii. What did you find difficult about this project? What did you find easy? What did you learn?*
-
-The most challenging aspect of this project was preprocessing the data, as it contained a lot of noise and required careful NLP text preprocessing. Converting between different data types such as strings, vectors, and tensors while ensuring the types are valid was particularly tricky.
-
-On the other hand, I found designing the model and building the training loop relatively easy, since I could consult various sources for guidance, and the process of using PyTorch for machine learning appeared to be consistent across different cases. This allowed me to focus on the specific aspects of NLP and RNN-based models without getting bogged down in the details of the machine learning process itself.
-
-Throughout this project, I learned a great deal about natural language processing, RNNs (specifically LSTMs and GRUs), and the PyTorch framework. The hands-on experience helped me gain a deeper understanding of the challenges and intricacies associated with NLP and text data. I also learned about the importance of data preprocessing and the various techniques that can be employed to clean and prepare text data for model training. Furthermore, I gained valuable experience in implementing and training neural network models using PyTorch and evaluating their performance.
-
-Overall, this project has significantly increased my familiarity with PyTorch and deep learning, serving as an excellent stepping stone for further exploration of these topics. I thoroughly enjoyed applying the concepts learned in class to create my own machine learning models and look forward to building on this experience in future projects.
 
 ## License
 
